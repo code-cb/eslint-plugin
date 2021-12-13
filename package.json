@@ -1,6 +1,6 @@
 {
   "name": "@codecb/eslint-plugin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Custom ESLint rules and configs",
   "keywords": [
     "eslint",
@@ -39,6 +39,9 @@
   },
   "peerDependenciesMeta": {
     "eslint-config-react-app": {
+      "optional": true
+    },
+    "eslint-plugin-flowtype": {
       "optional": true
     },
     "eslint-plugin-jest": {
