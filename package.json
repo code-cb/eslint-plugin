@@ -1,0 +1,65 @@
+{
+  "name": "@codecb/eslint-plugin",
+  "version": "0.0.6",
+  "description": "Custom ESLint rules and configs",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "author": "ICodeMyOwnLife",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.ts --no-splitting --minify",
+    "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
+    "typecheck": "tsc -noEmit -p ."
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-testing-library": "^3.9.0",
+    "prettier": "^2.5.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-config-react-app": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-testing-library": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.29.0",
+    "@types/estree": "^0.0.50",
+    "@types/node": "^16.11.12",
+    "prettier": "^2.5.0",
+    "tsup": "^5.10.3",
+    "typescript": "^4.5.3"
+  }
+}
